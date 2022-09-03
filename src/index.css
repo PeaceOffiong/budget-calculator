@@ -1,13 +1,136 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height:100vh;
+}
+
+.main-app{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form{
+  margin: 20px;
+  height: 220px;
+  width: 450px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+input{
+  height: 32px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid rgb(194, 194, 227);
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+button{
+  height: 36px;
+  width: 200px;
+  border: 2px solid rgb(194, 194, 227);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(194, 194, 227);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.alert-center{
+  width: 200px;
+  height: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert{
+  height: 25px;
+}
+
+h3{
+  color: rgb(97, 97, 169);
+}
+
+label{
+  color:rgb(97, 97, 169);
+  margin: 10px;
+}
+
+.contain{
+  display: flex;
+}
+
+.ul{
+  margin: 30px;
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  width: 440px;
+  height: 40px;
+  background-color: aliceblue;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  padding: 20px;
+}
+
+.icon{
+  font-size : 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.icon.g{
+  color: green;
+}
+
+.icon.r{
+  color: red;
+}
+
+.amount{
+  text-transform: capitalize;
+}
+
+.total-center{
+  height: 30px;
+  width: 250px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.total-number{
+  background-color: red;
+  height: 30px;
+  width: 150px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
